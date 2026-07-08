@@ -2,5 +2,9 @@
     "title":"I计之家",
     "subTitle":"欢迎同学回家~",
     "avatarUrl":"https://avatars.githubusercontent.com/u/101052902?v=4&size=64",
+    "themeMode":"manual",
+    "dayTheme":"light",
+    "nightTheme":"dark_colorblind",
+    "bottomText":"内部传阅，切勿外传",
     "GMEEK_VERSION":"last"
 }
