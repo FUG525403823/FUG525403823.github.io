@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/101052902?v=4&size=64"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="> 这篇文章源自于早年于贴吧撰写的《计蒜机入坑指南》，当时书写这篇文章是为了让未来进入大学学习计算机的各位能够少踩一些坑，目前看来收效甚微。">
+<meta property="og:title" content="计算机入坑指南">
+<meta property="og:description" content="> 这篇文章源自于早年于贴吧撰写的《计蒜机入坑指南》，当时书写这篇文章是为了让未来进入大学学习计算机的各位能够少踩一些坑，目前看来收效甚微。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://FUG525403823.github.io/post/ji-suan-ji-ru-keng-zhi-nan.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/101052902?v=4&size=64">
+<title>计算机入坑指南</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">计算机入坑指南</h1>
+<div class="title-right">
+    <a href="https://FUG525403823.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/FUG525403823/FUG525403823.github.io/issues/3" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><blockquote>
+<p>这篇文章源自于早年于贴吧撰写的《计蒜机入坑指南》，当时书写这篇文章是为了让未来进入大学学习计算机的各位能够少踩一些坑，目前看来收效甚微。由于书写的时间太早，现在看来有不少需要优化的地方，遂撰此文。希望对你有帮助</p>
+</blockquote>
+<p><strong>首先欢迎各位来淮工。</strong><br>
+本帖主要目的是站在老生角度给刚入学的新生一些建议。<br>
+当然也欢迎各位老登在评论区补充。</p>
+<h2>生活方面</h2>
+<ol>
+<li>计算机院大部分学生首先面对的就是<strong>设备</strong>问题。</li>
+</ol>
+<ul>
+<li>手机：能流畅运行qq微信等通信软件就行，至于电话卡建议看贴吧置顶帖。</li>
+<li>电脑：无脑选择游戏本，所谓游戏本并不是说让你纯打游戏的电脑，而是在配置上优于其他笔记本的型号，初期学习可能差距不大，但是到后期开发过程中要开启多个虚拟机，或者学习人工智能对算力有一定需求，轻薄本是完全不够用的。就算是轻薄本，该打游戏的人终究会打游戏。至于为什么不推荐台式，因为贵，不然台式加高性能平板是非常好的选择。<br>
+过了这么多年，这个推荐的含金量还在提升，AI时代虽说对编译器的性能需求降低了，但是会调底模的人在市场上还是很抢手的，加之内存和显卡价格成倍上涨，当年在评论区推荐轻薄本还跟我辩论的老东西想必已经后悔了。</li>
+<li>平板：考研再买不迟。我懂你想要无纸化学习、想要用大板子看网课记笔记，但是你要是真的在好好学计算机，你应该买的是一个24寸显示器。</li>
+<li>显示屏：对于一个成熟的开发者，或者已经有自学能力的计算机学子，显示屏可以直截了当的提升工作效率和学习效率，是生产力工具，一块屏幕可以减少很多你切换应用程序的动作，也能将需要左右对照的两个程序并排放置，甚至可以竖着看上下更有关联的代码（ai时代倒是没这个需求了）。</li>
+<li>耳机：优先考虑隔音而不是音质，不管是去图书馆自习还是在宿舍学习，隔音耳机能直接减少人与人之间的冲突，要知道，淮工最多的就是傻逼。</li>
+<li>键盘：等你敲代码手疼了就可以考虑入机械了，机械推荐类红轴，不推荐任何段落轴，手不疼就该用什么用什么，一杆趁手的键盘对我来说是医疗器械。</li>
+<li>人体工学椅：确定不换宿舍、或者有稳定座位的，早买早享受，每天久坐对腰椎的打击巨大。入门款500左右价位就行，同样还可选按摩仪、蒸汽眼罩，保护好自己的硬件。</li>
+<li>露营椅：考研神器，轻到可以背着上课，在教室外面支起来就可以背书，空间小到宿舍绝对放得下，坐的很舒服可以搬到湖边睡觉，肯定比学校长凳舒服。</li>
+</ul>
+<ol start="2">
+<li>生活用品</li>
+</ol>
+<ul>
+<li>尽量不要去学校超市购买生活用品，价格贵的很捏（现在看当时还是太婉约了，傻逼超市东西又贵又差放货架上从不更新的弱智小玩意卖市场价三五倍我说大学生的钱还是太好骗了）</li>
+<li>快递站很方便可以直接网购，就是开学初可能东西多容易出事，所以重要的东西及时去拿。</li>
+<li>尽早跟室友集资购买清洁用具，这是第一次能直观看到室友品行的机会，如果有人不配合建议自备香氛产品，<strong>大概率有用</strong>。</li>
+<li>常用药品一定要带点，学校医保报销流程复杂，校外也不承认学校医保，小病自医的能力很重要。</li>
+<li>插电台灯，特别是竹5竹6，宿舍的光线设计是绝对有问题的，没有台灯很伤眼睛。</li>
+</ul>
+<ol start="3">
+<li>学校有很多可爱的小猫，特别是竹五竹六楼下的猫猫很粘人，尽量去湖边喂，宿管阿姨不让在门口养，理由是猫会偷外卖，要我说能偷走同等自身体重外卖的猫也就在淮带存在了。</li>
+</ol>
+<h2>学习方面</h2>
+<ol>
+<li>校内课程<br>
+注意：<br>
+<strong>淮工直至本帖撰写完成没有保研资格！</strong><br>
+<strong>没有保研资格！</strong><br>
+没有保研资格！<br>
+知乎有句话说得好：大学最大的问题就是上课浪费学习时间。<br>
+任何人让你去死卷绩点都不是好人，但也要遵从老师安排，做作业，打卡，做往年卷。保证自己不挂科是底线，60分==100分，59分==0分。平时分保证了，期末最后几节课认真听，花点时间速通知识点和往年卷，基本不会挂科。<br>
+版本更新了，自从取消了挂科保底机制（曾经，作为期末分数参考的每一项都需要有70%以上的人及格），淮带计算机老师变的越来越肆无忌惮了，每天上课签到，下课签退，中途点人头，甚至有神人班级需要下课集合合影。我看是上课上出幻觉感觉自己是课堂皇帝了。</li>
+<li>自学<br>
+抽出时间去学自己需要学的东西。这部分就需要你自己摸索了，如果要学计算机的话从四大件入门不会错，也可以加入学习类社团白嫖学长建议。<br>
+计算机最缺的就是学习路线，需要引路人，如果能找到真的在学计算机的学长学姐可以多问一些经过自己思考的问题，学长学姐会热心解答的。<br>
+其次缺的就是结伴学习的人。这个比较难解决，因为你很容易发现走着走着就你自己在前进了，不管是学习还是比赛大部分时间都是自己单挑，我个人的解决方案是去网上找组织。<br>
+最后缺的就是学习的恒心。<br>
+学习容易，容易个p！一天不学没手感了，三天不学不想学了，两周不学全忘了 ----zhan</li>
+<li>竞赛<br>
+废了<br>
+至少在本院，学科竞赛是跟老师高强度绑定的。<br>
+其中的混乱不堪与曲折野史可以找打竞赛的学长学姐问，后面可以在博客更新，直接说结论了。<br>
+1）确定你要打的赛事自己有单挑的能力，包括你的导师有单挑的能力然后你有导师的高信赖值。<br>
+2）确定你要打的比赛有人给你报销，跟别的学校不一样，我们学校（大概率）是不给个人参赛者报销的，很容易造成报名费花了1800拿完奖学校奖金发给你150还不报销的情况（奖金都可能没有）。<br>
+3）确定你要打的赛事对你个人能力有提升，不管是何种途径参加竞赛，参与了就要学到东西，不要浪费时间浪费资源。<br>
+这方面信息可以在学科竞赛类社团打听会很有乐子。<br>
+暂时就这些，有补充再发</li>
+</ol></div>
+<div style="font-size:small;margin-top:8px;float:right;">内部传阅，切勿外传</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://FUG525403823.github.io">I计之家</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","FUG525403823/FUG525403823.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+
+</html>
